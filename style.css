@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/*-login page -*/
+
+#login-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/login\ panner2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#login-page img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+.container .login-text h1 {
+    padding-left: 0;
+    font-size:80px;
+    color:#820000 ;
+    padding-bottom:80px ;
+    font-weight:bold;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.container .login-text h1 span {
+    font-size: 75px;
+    color: white;
+}
+
+.container .login-text p {
+    font-size: 38px;
+    font-family: 'Cairo', sans-serif; 
+    font-weight: bold;
+    color:#5e0202  ;
+    padding-top: 8%;
+    
+}
+
+.container form {
+    padding-top: 13%;
+}
+
+.container form label {
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.container form input {
+    padding-top: 5px;
+    background-color: transparent;
+    padding-bottom: 10px;
+    border: 2px solid #5e0202;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    color: black;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.container input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.container form  button {
+    margin-top: 10px;
+    padding: 15px;
+    margin-left: 33px;
+    border-radius: 10px;
+    background-color: #820000;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 10px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container form  button a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.container form  button:hover {
+    background-color: white;
+    
+}
+
+.container span a {
+    text-decoration: none;
+    margin-left:38px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    text-transform: capitalize;
+}
+
+.container form .social {
+    margin-top: 20px;
+   
+}
+
+.container form .social .fa {
+    font-size: 25px;
+    color: #820000;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+
+.container form .social .fa:hover {
+    color: white;
+}
+
+/*- Home page panner -*/
+
+#home-page {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#111,#222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-page::after{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: #ab0101;
+    position: absolute;
+    clip-path: circle(40% at right 70%);
+}
+
+.container-home {
+    width: 80%;
+    height: 80%;
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.container-home nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-home nav ul li {
+    display: inline;
+    list-style: none;
+    padding-right: 150px;
+}
+
+.container-home nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+    font-family: sans-serif;
+    transition: 0.4s;
+}
+
+.container-home nav ul li a:hover {
+    color: #ab0101;
+}
+
+.container-home .container-img img {
+    display: block;
+    position: absolute;
+    right:5px;
+    top: 80px;
+}
+
+.container-home .container-text h4 {
+    position: absolute;
+    font-size: 40px;
+    top: 35%;
+    left: 30px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 3px;
+    color: rgb(219, 219, 219);
+    text-transform: capitalize;
+}
+
+.container-home .container-text h4 span {
+    color: #cd0000;
+}
+
+/*-products - page -*/
+
+#pro-sction {
+    width: 100%;
+    background: linear-gradient(#111,#222);
+    padding-top: 10px;
+
+}
+
+.pro-container {
+    width: 350px;
+    position: relative;
+    background-color: rgb(179, 179, 179);
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 3px #820000;
+    transition: 0.4s;
+}
+
+.pro-container:hover {
+    transform: translateY(-7px);
+}
+
+.pro-container a {
+    text-decoration: none;
+}
+
+.pro-container .overlay {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0,0.3),#ab0101);
+    transition: 0.5s;
+}
+
+.pro-container:hover .overlay {
+    height: 100%;
+}
+
+.pro-container .overlay .text h1 {
+   color: white;
+   text-align: center;
+   padding-top: 80px;
+   padding-bottom: 10px;
+}
+
+.pro-container .overlay .text hr {
+    text-decoration: none;
+    color: white;
+}
+
+.pro-container .overlay .text p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#pro-sction .main-container {
+    width:80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 10px;
+}
+
+#pro-sction .main-container .pro-container {
+    margin-bottom: 10px;
+    margin: 10px;
+}
+/*-middel panner -*/
+
+#mid-panner {
+    width: 100%;
+    margin: auto;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(images/mid-imag2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*-services section -*/
+
+#ser-section {
+    width: 100%;
+    height: 100vh;
+   background: linear-gradient(#111,#222);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+#ser-section .ser-one {
+    width: 30%;
+    height: 300px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    margin-top: 20px;
+   position: relative;
+   border-radius: 20px;
+   box-shadow: 2px 2px 3px 4px #efefef;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+#ser-section::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #ab0101;
+    position: absolute;
+    clip-path: circle(40% at right 10%  );
+    z-index: -111;
+}
+
+#ser-section .ser-one img {
+    width: 150px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+#ser-section .ser-one p {
+    position: absolute;
+    bottom: 20px;
+    color: #efefef;
+    font-size: 25px;
+    left: 30px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+#ser-section .ser-one:hover {
+    transform: translateX(9px);
+}
+
+/*-contact section -*/
+
+#contacts {
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(#111,#222);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contacts img {
+    position: absolute;
+    left:34% ;
+    top: 10vh;
+    opacity: 0.3;
+}
+
+#contacts .contact-coloun-one h1 {
+    color: #ab0101;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 3px;
+    padding-right: 100px;
+}
+
+#contacts .contact-coloun-one p {
+    color: #efefef;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+#contacts .contact-coloun-two h1 {
+    color: #ab0101;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 3px;
+    
+}
+
+#contacts .contact-coloun-two p {
+    color: #efefef;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+#contacts .copyright {
+    position: absolute;
+    bottom: 7px;
+}
+
+#contacts .copyright h4 {
+    font-size: 22px;
+    color: white;
+    background-color: #820000;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/*-kawazaki page -*/
+
+#slid {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#111,#222);
+}
+
+#slid .but-home {
+    padding-top: 10px;
+    padding-left: 10px; 
+}
+
+#slid .but-home button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #820000;
+    transition: 0.4s;
+}
+
+#slid .but-home button:hover {
+    background-color: white;
+}
+
+#slid .but-home button a {
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+#slid::after {
+    content: "";
+    width: 100%;
+    height: 93%;
+    background-color: #820000;
+    position: absolute;
+    clip-path: circle(40% at left 90%);
+    z-index: 1;
+}
+
+#slid .kawa-container {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: auto;
+    position: absolute;
+    top: 80px;
+    border-radius: 20px;
+    left:150px;
+    z-index: 11;
+}
+
+.kawa-container .kawa-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.kawa-container .kawa-img img {
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px 2px #820000;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 350px;
+}
+
+.kawa-container .kawa-img img:hover {
+    transform: translateY(-7px);
+}
+
+.kawa-container .kawa-det {
+    text-align: center;
+    margin-top: 40px;
+    word-spacing: 9px;
+}
+
+.kawa-container .kawa-det h1 {
+    color: #aaaaaa;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.kawa-container .kawa-det p {
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.kawa-container .but {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.kawa-container .but button {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #820000;
+    transition: 0.4s;
+}
+
+.kawa-container .but button:hover {
+    background-color: white;
+}
+
+.kawa-container .but button a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #111;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 667px) {
+    #slid  {
+      width: 100%;
+      position: relative;
+      height: 1000px;
+    }
+    #slid::after {
+        content: "";
+        width: 80%;
+        height: 95%;
+        background-color: #820000;
+        position: absolute;
+        clip-path: circle(40% at left 90%);
+        z-index: 1;
+    }
+    #slid .kawa-container{
+      position: absolute;
+      left: 0;
+      margin-left: 25px;
+      height: 800px;
+    }
+    .kawa-container .kawa-img{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        margin-left: 27px;
+    }
+    .kawa-container .kawa-img  img {
+        width:90%;
+        margin-bottom: 5px;
+    }
+    .kawa-container .kawa-det {
+        position: absolute;
+        bottom: 150px;
+    }
+    .kawa-container .kawa-det h1 {
+        font-size:20px;
+        padding-top: 0;
+        padding-left: 10px;
+        margin-bottom: 2px;
+        color: white;
+    }
+    .kawa-container .kawa-det p {
+        font-size: 15px;
+        margin-top: 2px;
+    }
+    .kawa-container .but {
+        position: absolute;
+        right: 0;
+        bottom: 30px;
+        right: 110px;
+    }
+    .kawa-container .but button {
+        background-color: white;
+    }
+}
